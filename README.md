@@ -122,10 +122,10 @@ Data dictionary
 -   sampling\_week: Wednesday of the week of sampling. We compare
     Wednesday to centered rolling cases because Wednesday is in the
     middle of the work week, and most of our samples are collected
-    between Monday and Friday.
+    between Monday and Friday. (YYYY-MM-DD)
 
 -   normalized\_concentration\_rolling\_average: three-sample average of
-    weekly normalized concentrations, as discussed above. (normalized
+    weekly normalized concentrations (normalized
     genome copies per mL of wastewater)
 
 -   population: sum of sewershed populations for all constituent
@@ -159,10 +159,10 @@ Data dictionary
 -   sampling\_week: Wednesday of the week of sampling. We compare
     Wednesday to centered rolling cases because Wednesday is in the
     middle of the work week, and most of our samples are collected
-    between Monday and Friday.
+    between Monday and Friday. (YYYY-MM-DD)
 
 -   normalized\_concentration\_rolling\_average: three-sample average of
-    weekly normalized concentrations, as discussed above (normalized
+    weekly normalized concentrations (normalized
     genome copies per mL of wastewater)
 
 -   population: sum of sewershed populations for all constituent
@@ -196,7 +196,9 @@ of wastewater, as described in Wu et al. 2020. Resulting pellets were
 resuspended in TRIzol, and RNA was purified via phenol-chloroform
 extraction. RNA samples were first reverse transcribed and then assayed
 by qPCR using SARS-CoV-2 nucleocapsid gene (N1 and N2 regions), and
-PMMoV amplicons (CDC 2020; Zhang et al., 2006).
+PMMoV amplicons 
+([CDC 2020](https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-panel-primer-probes.html); 
+[Zhang et al., 2006](https://doi.org/10.1371/journal.pbio.0040003)).
 
 In June 2020, we switched to our current protocol which uses Amicon
 Ultra-15 centrifugal ultrafiltration units to concentrate 15mL of
@@ -210,8 +212,9 @@ units, extracted each separately, and pooled the duplicate RNA extracts
 together prior to analysis. RNA samples eluted from the RNeasy kit were
 subjected to one-step RT-qPCR analysis in triplicate for N1, N2, and
 PMMoV amplicons. Cts were called from raw fluorescence data using the
-Cy0 algorithm from the qpcR package (v1.4-1) in R (Guescini et al.,
-2008), and manually inspected for agreement with the raw traces in the
+Cy0 algorithm from the qpcR package (v1.4-1) in R 
+([Guescini et al., 2008](https://doi.org/10.1186/1471-2105-9-326)),
+and manually inspected for agreement with the raw traces in the
 native Biorad software.
 
 In both methods, we ran a variety of laboratory controls. Positive
@@ -246,7 +249,7 @@ This work could not have been possible without the support of the participating 
 License
 -------
 
-CC-BY-NC
+This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only.
 
 If you are interested in an academic collaboration using this data,
 please reach out to
